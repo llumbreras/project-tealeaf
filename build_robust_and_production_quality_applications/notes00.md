@@ -24,4 +24,16 @@ Now push the changes to the remote server.
   git push
 
 
+##### Git Reset
+
+To undo a commit but keep the changes:
+  git reset --soft HEAD^
+
+  This will take you back to your previous commit.
+
+To undo a commit and remove the changes:
+  git reset --hard HEAD^
+
+More explanation: http://stackoverflow.com/questions/2530060/can-you-explain-what-git-reset-does-in-plain-english
+
 
