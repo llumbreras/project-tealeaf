@@ -36,4 +36,15 @@ To undo a commit and remove the changes:
 
 More explanation: http://stackoverflow.com/questions/2530060/can-you-explain-what-git-reset-does-in-plain-english
 
+##### Image Tag in HAML
+
+A clickable image can be done as:
+
+  = link_to image_tag("#{video.small_cover_url}"), "http://go.to/cover"
+  = link_to(image_tag("#{video.small_cover_url}", :alt => "small cover", :width => 100, :height => 100, :title => "Cover") "/")
+
+For a collection of images, using iteration:
+  = link_to video do
+    %img(src="#{video.small_cover_url}")
+
 
